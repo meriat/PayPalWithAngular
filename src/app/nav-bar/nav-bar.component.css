@@ -27,10 +27,6 @@ a{
       margin-right: 50px;
   }
 
-  /* .paypal-img-logo {
-    text-align: left;
-  } */
-
   #signup{
     background-color: white;
     color: black;
@@ -44,4 +40,8 @@ a{
     box-shadow: 0 0 0 1px white, 0 0 0 1px white;
     border-radius: 25px;
     font-family: "pp-sans-small-regular",Helvetica Neue,Arial,sans-serif;
+}
+img{
+    float: left;
+    margin-left:10px;
 }
