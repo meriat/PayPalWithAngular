@@ -1,0 +1,46 @@
+.btn{
+    color: #0070ba;
+    background-color: transparent;
+    position: relative;
+    border: 0;
+    box-shadow: 0 0 0 1px white, 0 0 0 1px white;
+    border-radius: 25px;
+}
+.sectionFour{
+    padding-left: 40px;
+    padding-top: 40px;
+    font-size: 13px;
+    text-align: left;
+}
+section{
+    text-align: center
+}
+
+.sectionTwo{
+    background-color: #F7F9FA;
+}
+
+.digitalassets{
+    background-size: contain;
+}
+
+#btntwo{
+    color: #0070ba;
+    background-color: white;
+    position: relative;
+    border: 0;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sectionThree{
+    color:white;
+    padding:50px;
+    background-image: radial-gradient(#0091D5,#0056A6);
+}
+
+.small{
+    font-size: 10px;
+}
