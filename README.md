@@ -2,6 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
+## Specifications
+
+### 1 Make components for navbar, timeline picture and body content
+### 2 Build the front end for the home-page of the application
+### 3 Connect firebase and other functionality like methods for log in and sign up to the page 
+
+## Done
+### Make navbar and body content componets
+
+## Future
+### Make timeline component 
+### Connect firebase and other functionality like methods for log in and sign up to the page 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
