@@ -16,6 +16,10 @@ section{
     text-align: center
 }
 
+.sectionOne{
+    margin-top: 8%;
+}
+
 .sectionTwo{
     background-color: #F7F9FA;
 }
