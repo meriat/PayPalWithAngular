@@ -1,17 +1,111 @@
 <header>
   <!-- <a href="https://www.paypal.com/us/webapps/mpp/home" class="paypal-img-logo">PayPal</a> -->
-  
-<div class="navbar" id="private">
-    <a href ="#"><img width="150" height="35" src="https://instalikes4u.com/img/b1.png" alt=""></a>
-  <ul class="main-menu-list">
-      <li class="personal"><a href="#" rel="menuitem">Personal</a></li>
-      <li class="business"><a href="#" rel="menuitem">Business</a></li>
+
+  <div class="navbar" id="private">
+    <a href="#"><img width="150" height="35" src="https://instalikes4u.com/img/b1.png" alt=""></a>
+    <ul class="main-menu-list">
+      <li class="personal" (click)="show=true"><a href="#" rel="menuitem">Personal</a></li>
+      <li class="business" (click)="bus=true"><a href="#" rel="menuitem">Business</a></li>
       <li><a href="#" rel="menuitem">Send</a></li>
       <li><a href="#" rel="menuitem">Request</a></li>
     </ul>
-</div>
-<div class="header-buttons">
-  <a href="#" class="btn">Log In</a>
-  <a href="#" class="btn" id="signup">Sign Up</a>
-</div>
+  </div>
+  <div class="header-buttons">
+    <a href="#" class="btn">Log In</a>
+    <a href="#" class="btn" id="signup">Sign Up</a>
+  </div>
+  <div class="drop" *ngIf="show">
+    <div class="row">
+
+      <div class="col-md-4">
+        <h6>What is PayPal?</h6>
+        <p class="small">Learn how PayPal works in your evryday life</p>
+      </div>
+
+      <div class="col-md-4">
+        <h6>PayPal Credid & cards</h6>
+        <p class="small">Our credit, debit, prepaid cards & PayPal Credit</p>
+      </div>
+
+      <div class="col-md-4">
+        <h6>PayPal Can Do That</h6>
+        <p class="small">Discover ways to manage and move your money</p>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <h6>Check Out Securely Online</h6>
+        <p class="small">Use credit cards or other funds</p>
+      </div>
+
+      <div class="col-md-4">
+        <h6>PayPal App</h6>
+        <p class="small">Transfer money and track activity with our appPayPal Can Do That
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <h6>Shopping and more</h6>
+        <p class="small">Deals, gift cards and donations</p>
+      </div>
+    </div>
+    <h3 (click)="show=false"><i class="fa fa-times" aria-hidden="true"></i></h3>
+  </div>
+
+
+
+
+
+  <div class="drop" *ngIf="bus">
+      <div class="row">
+  
+        <div class="col-md-4">
+          <h6>All Business Solutions</h6>
+          <p class="small">Merchant services, invoicing, and more</p>
+        </div>
+  
+        <div class="col-md-4">
+          <h6>Credit Card Processing</h6>
+          <p class="small">Accept credit, debit cards, and PayPal</p>
+        </div>
+  
+        <div class="col-md-4">
+          <h6>Add PayPal to Your Checkout</h6>
+          <p class="small">Add the button to accept payments</p>
+        </div>
+  
+      </div>
+  
+      <div class="row">
+          
+        <div class="col-md-4">
+          <h6>Get Paid in Person</h6>
+          <p class="small">Mobile card readers and POS solutions</p>
+        </div>
+  
+        <div class="col-md-4">
+          <h6>  Business Loans</h6>
+          <p class="small">Fast and fair financing
+          </p>
+        </div>
+  
+        <div class="col-md-4">
+          <h6>Offer credit to your customers</h6>
+          <p class="small">Promote financing to help increase sales</p>
+        </div>
+      </div>
+      <h3 (click)="bus=false"><i class="fa fa-times" aria-hidden="true"></i></h3>
+    </div>
+
 </header>
+
+
+
+
+
+
+
+

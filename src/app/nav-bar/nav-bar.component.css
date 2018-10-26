@@ -45,3 +45,14 @@ img{
     float: left;
     margin-left:10px;
 }
+
+.small{
+    font-size: 13px;
+}
+.row{
+text-align: center;
+}
+h3{
+    text-align: right;
+    margin-right: 30px;
+}
