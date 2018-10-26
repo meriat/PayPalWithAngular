@@ -15,7 +15,7 @@ a{
     /*border: 1px solid grey;*/
     margin-left: -15px;
     margin-right: -15px;
-    background-color:rgba(0, 0, 0, 0.3);
+    background-color:rgba(0, 0, 0, 0.4);
   }
 
   .main-menu-list li{
@@ -31,18 +31,9 @@ a{
     text-align: left;
   } */
 
-  #login{
-      background-color: transparent;
-      color: black;
-      border-radius: 40%;
-      font-family: "pp-sans-small-regular",Helvetica Neue,Arial,sans-serif;
-
-  }
   #signup{
-      color: white;
-      border-radius: 40%;
-      font-family: "pp-sans-small-regular",Helvetica Neue,Arial,sans-serif;
-
+    background-color: white;
+    color: black;
   }
 
   .btn{
@@ -50,6 +41,7 @@ a{
     background-color: transparent;
     position: relative;
     border: 0;
-    box-shadow: 0 0 0 1px #0070ba, 0 0 0 1px #0070ba;
+    box-shadow: 0 0 0 1px white, 0 0 0 1px white;
     border-radius: 25px;
+    font-family: "pp-sans-small-regular",Helvetica Neue,Arial,sans-serif;
 }
