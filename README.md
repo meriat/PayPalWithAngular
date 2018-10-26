@@ -10,6 +10,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Done
 ### Make navbar and body content componets
+### Completed half of the timeline component
 
 ## Future
 ### Make timeline component 
