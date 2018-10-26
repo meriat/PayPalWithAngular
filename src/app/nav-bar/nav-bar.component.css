@@ -7,7 +7,7 @@ a{
 }
 .navbar {
     display: block;
-    position: fixed;
+    /* position: fixed; */
     text-align: center;
     top: 0;
     width: 100%;
@@ -18,13 +18,9 @@ a{
     background-color:rgba(0, 0, 0, 0.4);
   }
 
-  .main-menu-list li{
-      margin: 10px;
-  }
   .header-buttons{
       text-align: right;
-      margin: 10px;
-      margin-right: 50px;
+    
   }
 
   #signup{
@@ -56,3 +52,9 @@ h3{
     text-align: right;
     margin-right: 30px;
 }
+
+header{
+    text-align: center;
+    font-family: pp-sans-small-regular,Helvetica Neue,Arial,sans-serif
+}
+

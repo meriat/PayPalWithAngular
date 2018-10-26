@@ -1,19 +1,21 @@
 <header>
-  <!-- <a href="https://www.paypal.com/us/webapps/mpp/home" class="paypal-img-logo">PayPal</a> -->
-
   <div class="navbar" id="private">
+    <div class="container">
+
     <a href="#"><img width="150" height="35" src="https://instalikes4u.com/img/b1.png" alt=""></a>
     <ul class="main-menu-list">
-      <li class="personal" (click)="show=true"><a href="#" rel="menuitem">Personal</a></li>
-      <li class="business" (click)="bus=true"><a href="#" rel="menuitem">Business</a></li>
-      <li><a href="#" rel="menuitem">Send</a></li>
-      <li><a href="#" rel="menuitem">Request</a></li>
+      <li class="personal" (click)="show=true"><a href="#" rel="menuitem">PERSONAL</a></li>
+      <li class="business" (click)="bus=true"><a href="#" rel="menuitem">&nbsp;BUSINESS</a></li>
+      <li><a href="#" rel="menuitem">&nbsp;SEND</a></li>
+      <li><a href="#" rel="menuitem">&nbsp;REQUEST</a></li>
     </ul>
+        <span class="header-buttons">
+        <a href="#" class="btn">Log In</a>
+        <a href="#" class="btn" id="signup">Sign Up</a>
+      </span> 
+    </div>
   </div>
-  <div class="header-buttons">
-    <a href="#" class="btn">Log In</a>
-    <a href="#" class="btn" id="signup">Sign Up</a>
-  </div>
+  
   <div class="drop" *ngIf="show">
     <div class="row">
 
