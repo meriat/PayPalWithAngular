@@ -1,0 +1,55 @@
+li{
+    list-style-type: none;
+    display: inline;
+}
+a{
+    color: white;
+}
+.navbar {
+    display: block;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    color: white;
+    /*border: 1px solid grey;*/
+    margin-left: -15px;
+    margin-right: -15px;
+    background-color:rgba(0, 0, 0, 0.3);
+  }
+
+  .main-menu-list li{
+      margin: 10px;
+  }
+  .header-buttons{
+      text-align: right;
+      margin: 10px;
+      margin-right: 50px;
+  }
+
+  /* .paypal-img-logo {
+    text-align: left;
+  } */
+
+  #login{
+      background-color: transparent;
+      color: black;
+      border-radius: 40%;
+      font-family: "pp-sans-small-regular",Helvetica Neue,Arial,sans-serif;
+
+  }
+  #signup{
+      color: white;
+      border-radius: 40%;
+      font-family: "pp-sans-small-regular",Helvetica Neue,Arial,sans-serif;
+
+  }
+
+  .btn{
+    color: white;
+    background-color: transparent;
+    position: relative;
+    border: 0;
+    box-shadow: 0 0 0 1px #0070ba, 0 0 0 1px #0070ba;
+    border-radius: 25px;
+}
