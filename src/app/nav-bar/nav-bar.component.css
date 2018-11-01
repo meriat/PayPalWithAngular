@@ -6,16 +6,14 @@ a{
     color: white;
 }
 .navbar {
+    position: absolute;
+    z-index: 40;
     display: block;
-    /* position: fixed; */
     text-align: center;
     top: 0;
     width: 100%;
     color: white;
-    /*border: 1px solid grey;*/
-    margin-left: -15px;
-    margin-right: -15px;
-    background-color:rgba(0, 0, 0, 0.4);
+    background-color:rgba(0, 0, 0, 0.3);
   }
 
   .header-buttons{
@@ -56,5 +54,13 @@ h3{
 header{
     text-align: center;
     font-family: pp-sans-small-regular,Helvetica Neue,Arial,sans-serif
+}
+
+.drop{
+    padding-top: 70px;
+    padding-bottom: 10px;
+    background-image: radial-gradient(#0091D5,#0056A6);
+    color: white;
+    margin-bottom: -10px;
 }
 

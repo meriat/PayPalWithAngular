@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { BodySecondaryComponent } from './body-secondary/body-secondary.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -22,13 +23,15 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    FormsModule,
+    // FormsModule,
     NavBarComponent,
     BodySecondaryComponent,
-    TimelineComponent
+    TimelineComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule
