@@ -2,6 +2,7 @@
   <div class="navbar" id="private">
     <div class="container">
 
+
     <a href="#"><img width="150" height="35" src="https://instalikes4u.com/img/b1.png" alt=""></a>
     <ul class="main-menu-list">
       <li class="personal" (click)="show=true"><a href="#" rel="menuitem">PERSONAL</a></li>
@@ -9,11 +10,12 @@
       <li><a href="#" rel="menuitem">&nbsp;SEND</a></li>
       <li><a href="#" rel="menuitem">&nbsp;REQUEST</a></li>
     </ul>
-        <span class="header-buttons">
-        <a href="#" class="btn">Log In</a>
-        <a href="#" class="btn" id="signup">Sign Up</a>
+      <span class="header-buttons">
+        <span *ngIf="!isLoggedIn"><a class="btn" (click)="login()">Log In</a></span>
+        <span *ngIf="isLoggedIn"><a>{{username}}</a>
+          <a class="btn" (click)="logout()">Log out</a></span>
       </span> 
-    </div>
+      </div>
   </div>
   
   <div class="drop" *ngIf="show">
