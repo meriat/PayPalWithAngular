@@ -10,10 +10,18 @@ import { AuthenticationService } from '../authentication.service';
 })
 export class NavBarComponent{
   user;
+  public isLoggedIn: Boolean;
+  public userName: String;
 
   constructor(public authService: AuthenticationService) { 
     this.authService.user.subscribe(user => {
-      console.log(user);
+      if (user == null) {
+        this.isLoggedIn = false;
+      } else {
+        this.isLoggedIn = true;
+        this.userName = user.displayName;
+        console.log(this.userName);
+      }
     }); 
   }
 

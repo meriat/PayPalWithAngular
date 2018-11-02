@@ -11,10 +11,15 @@
       <li><a href="#" rel="menuitem">&nbsp;REQUEST</a></li>
       <li><a routerLink="Admin" rel="menuitem">&nbsp;ADMIN</a></li>
     </ul>
+
       <span class="header-buttons">
-        <span *ngIf="!isLoggedIn"><a class="btn" (click)="login()">Log In</a></span>
-        <span *ngIf="isLoggedIn"><a>{{username}}</a>
-          <a class="btn" (click)="logout()">Log out</a></span>
+        <span *ngIf="!isLoggedIn">
+          <a class="btn" (click)="login()">Log In</a>
+        </span>
+        <span *ngIf="isLoggedIn">
+          <a>{{userName}}</a>
+          <a class="btn" (click)="logout()">Log out</a>
+        </span>
       </span> 
       </div>
   </div>
