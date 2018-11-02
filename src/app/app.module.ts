@@ -14,6 +14,7 @@ import { BodySecondaryComponent } from './body-secondary/body-secondary.componen
 import { TimelineComponent } from './timeline/timeline.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AdminComponent } from './admin/admin.component';
+import { UserComponent } from './user/user.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +32,8 @@ export const firebaseConfig = {
     BodySecondaryComponent,
     TimelineComponent,
     WelcomeComponent,
-    AdminComponent
+    AdminComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
