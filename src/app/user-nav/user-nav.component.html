@@ -1,0 +1,28 @@
+<header>
+    <div class="navbar" id="private">
+      <div class="container">
+  
+      <a routerLink=""><img width="150" height="35" src="https://instalikes4u.com/img/b1.png" alt=""></a>
+      <ul class="main-menu-list">
+        <li class="personal" (click)="show=true"><a href="#" rel="menuitem">Summary</a></li>
+        <li class="business" (click)="bus=true"><a href="#" rel="menuitem">&nbsp;Activity</a></li>
+        <li><a href="#" rel="menuitem">&nbsp;Send & Request</a></li>
+        <li><a href="#" rel="menuitem">&nbsp;Wallet</a></li>
+        <li><a routerLink="#" rel="menuitem">&nbsp;Offers</a></li>
+        <li><a routerLink="#" rel="menuitem">&nbsp;Help</a></li>
+
+      </ul>
+  
+        <span class="header-buttons">
+          <span *ngIf="!isLoggedIn">
+            <a class="btn" (click)="login()">Log In</a>
+          </span>
+          <span *ngIf="isLoggedIn">
+            <a routerLink="User">{{userName}}</a>
+            <a class="btn" (click)="logout()" routerLink="">Log out</a>
+          </span>
+        </span> 
+        </div>
+    </div>
+  </header>
+  

@@ -1,7 +1,9 @@
-.container {
+#userBody {
     margin-top: 100px;
+    text-align: left;
 }
 
 body{
     background-color: #F5F7FA;
 }
+
