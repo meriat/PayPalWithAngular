@@ -10,6 +10,10 @@ users: FirebaseListObservable<any[]>
     this.users = this.database.list('users');
    }
 
+   getBalance(){
+     return this.users
+   }
+
    addUser(newUser: User){
      this.users.push(newUser);
    }

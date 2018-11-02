@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AdminComponent} from './admin/admin.component';
 import { UserPageComponent } from './user-page/user-page.component';
+import { SendComponent } from './send/send.component';
 const appRoutes: Routes = [
     {
         path: '',
@@ -15,6 +16,10 @@ const appRoutes: Routes = [
     {
         path: 'User',
         component: UserPageComponent
+    },
+    {
+        path: 'Send',
+        component: SendComponent
     }
 ];
 
