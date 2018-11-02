@@ -15,6 +15,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
+import { UserPageComponent } from './user-page/user-page.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -33,7 +34,8 @@ export const firebaseConfig = {
     TimelineComponent,
     WelcomeComponent,
     AdminComponent,
-    UserComponent
+    UserComponent,
+    UserPageComponent
   ],
   imports: [
     BrowserModule,
