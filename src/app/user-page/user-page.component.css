@@ -7,3 +7,9 @@ body{
     background-color: #F5F7FA;
 }
 
+.boxes {
+    box-shadow: 8px 10px 10px 5px #edeff2;
+    padding: 10px;
+    color: #0070BA;
+    margin-bottom: 40px;
+}
