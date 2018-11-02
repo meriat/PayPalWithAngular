@@ -3,12 +3,13 @@
     <div class="container">
 
 
-    <a href="#"><img width="150" height="35" src="https://instalikes4u.com/img/b1.png" alt=""></a>
+    <a routerLink=""><img width="150" height="35" src="https://instalikes4u.com/img/b1.png" alt=""></a>
     <ul class="main-menu-list">
       <li class="personal" (click)="show=true"><a href="#" rel="menuitem">PERSONAL</a></li>
       <li class="business" (click)="bus=true"><a href="#" rel="menuitem">&nbsp;BUSINESS</a></li>
       <li><a href="#" rel="menuitem">&nbsp;SEND</a></li>
       <li><a href="#" rel="menuitem">&nbsp;REQUEST</a></li>
+      <li><a routerLink="Admin" rel="menuitem">&nbsp;ADMIN</a></li>
     </ul>
       <span class="header-buttons">
         <span *ngIf="!isLoggedIn"><a class="btn" (click)="login()">Log In</a></span>

@@ -1,0 +1,23 @@
+<div class="container" id="pushDown">
+<h3>Add User!</h3>
+<form class="form-group">
+    <div>
+      <label>First Name</label>
+      <br>
+      <input #newFirst class="form-control">
+    </div>
+  
+    <div>
+      <label>Last Name</label>
+      <br>
+      <input #newLast class="form-control">
+    </div>
+  
+    <div>
+      <label>Amount</label>
+      <br>
+      <input #newAmount class="form-control">
+    </div>
+    <button class="btn btn-info" (click)="submitForm(newFirst.value,newLast.value,newAmount.value); newFirst.value=''; newLast.value=''; newAmount.value=''">SignUp</button>
+  </form>
+</div>
