@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -14,7 +15,6 @@ import { BodySecondaryComponent } from './body-secondary/body-secondary.componen
 import { TimelineComponent } from './timeline/timeline.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AdminComponent } from './admin/admin.component';
-import { UserComponent } from './user/user.component';
 import { UserPageComponent } from './user-page/user-page.component';
 
 export const firebaseConfig = {
@@ -28,13 +28,11 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    // FormsModule,
     NavBarComponent,
     BodySecondaryComponent,
     TimelineComponent,
     WelcomeComponent,
     AdminComponent,
-    UserComponent,
     UserPageComponent
   ],
   imports: [

@@ -14,10 +14,10 @@
 
       <span class="header-buttons">
         <span *ngIf="!isLoggedIn">
-          <a class="btn" (click)="login()" routerLink="Admin">Log In</a>
+          <a class="btn" (click)="login()">Log In</a>
         </span>
         <span *ngIf="isLoggedIn">
-          <a>{{userName}}</a>
+          <a routerLink="User">{{userName}}</a>
           <a class="btn" (click)="logout()" routerLink="">Log out</a>
         </span>
       </span> 

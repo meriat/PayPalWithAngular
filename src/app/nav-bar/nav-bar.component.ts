@@ -20,7 +20,6 @@ export class NavBarComponent{
       } else {
         this.isLoggedIn = true;
         this.userName = user.displayName;
-        console.log(this.userName);
       }
     }); 
   }

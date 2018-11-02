@@ -12,12 +12,18 @@
       <br>
       <input #newLast class="form-control">
     </div>
+
+    <div>
+        <label>E-mail</label>
+        <br>
+        <input #newEmail class="form-control">
+      </div>
   
     <div>
       <label>Amount</label>
       <br>
       <input #newAmount class="form-control"><hr>
     </div>
-    <button class="btn btn-info" (click)="submitForm(newFirst.value,newLast.value,newAmount.value); newFirst.value=''; newLast.value=''; newAmount.value=''">SignUp</button>
+    <button class="btn btn-info" (click)="submitForm(newFirst.value,newLast.value,newEmail.value,newAmount.value); newFirst.value=''; newLast.value=''; newEmail.value=''; newAmount.value=''">SignUp</button>
   </form>
 </div>
