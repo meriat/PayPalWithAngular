@@ -18,6 +18,8 @@ import { AdminComponent } from './admin/admin.component';
 import { UserPageComponent } from './user-page/user-page.component';
 import { UserNavComponent } from './user-nav/user-nav.component';
 import { SendComponent } from './send/send.component';
+import { WalletComponent } from './wallet/wallet.component';
+import { FooterComponent } from './footer/footer.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -37,7 +39,9 @@ export const firebaseConfig = {
     AdminComponent,
     UserPageComponent,
     UserNavComponent,
-    SendComponent
+    SendComponent,
+    WalletComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
