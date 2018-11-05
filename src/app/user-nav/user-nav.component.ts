@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
 import { AuthenticationService } from '../authentication.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-nav',
@@ -12,10 +13,12 @@ export class UserNavComponent {
   public isLoggedIn: Boolean;
   public userName: String;
 
-  constructor(public authService: AuthenticationService) { 
+  constructor(public authService: AuthenticationService, private router: Router) { 
     this.authService.user.subscribe(user => {
       if (user == null) {
         this.isLoggedIn = false;
+        this.user = null;
+        this.router.navigate(['']);
       } else {
         this.isLoggedIn = true;
         this.userName = user.displayName;
